@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { handleFocusIn, handleFocusOut, addTask } from './utils/taskUtils';
-import TodoInput from './components/TodoInput';
+import TodoInput from './components/TodoInput/TodoInput';
 import TaskList from './components/TaskList';
-import HeaderSection from './components/header-section';
+import HeaderSection from './components/HeaderSections/HeaderSection';
 import SortMobile from './components/SortMobile';
 import './styles/global.css';
 
@@ -16,7 +16,8 @@ interface Task {
 }
 
 const TodoApp = () => {
-
+  // const [isDarkMode, setIsDarkMode] = useState(false);
+  
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskText, setNewTaskText] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');

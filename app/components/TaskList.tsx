@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import BottomSection from './BottomSection';
+import BottomSection from './BottomSection/BottomSection';
 import { loadTasksCount } from '../utils/taskUtils';
 import { loadTasksFromLocalStorage, handleTaskDragStart, handleTaskDragOver, handleTaskDrop, handleTaskDragEnd, handleCheckboxChange, handleTaskInputBlur, removeTask, clearCompletedTasks } from '../utils/taskUtils';
-
 interface Task {
   id: number;
   taskText: string;

@@ -7,7 +7,10 @@ interface Task {
 
 export const toggleDarkMode = () => {
     document.body.classList.toggle('dark-mode');
+    document.getElementById('bootom-dark')?.classList.toggle('dark-mode-bottom');
 };
+
+
 
 export const loadTasksCount = (tasksToCount: Task[]) => {
     const itemsLeft = document.getElementById('items-left');

@@ -1,0 +1,43 @@
+.bottomSection {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(235, 19%, 35%);
+    padding: 15px 15px;
+    /* background-color: red !important; */
+  }
+
+  .darkModeBottomSection {
+    color: hsl(233, 11%, 84%) !important;
+  }
+
+  .sortItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .active {
+    color: royalblue;
+  }
+  
+  .sortOption {
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .clearCompleted {
+    cursor: pointer;
+  }
+
+
+
+  @media only screen and (max-width: 610px) {
+
+    .sortItems {
+      display: none !important;
+    }
+}

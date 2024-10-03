@@ -1,0 +1,32 @@
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 45px;
+  }
+  
+  .headerTodo {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .apirienceIcon {
+    display: block;
+    width: 25px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+  }
+  .lightModeIcon {
+    background: url(/static/images/icon-moon.svg);
+  }
+
+  .darkModeIcon {
+    background: url(/static/images/icon-sun.svg);
+  }

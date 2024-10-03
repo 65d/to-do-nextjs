@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+
 interface TodoInputProps {
   newTaskText: string;
   setNewTaskText: (text: string) => void;
