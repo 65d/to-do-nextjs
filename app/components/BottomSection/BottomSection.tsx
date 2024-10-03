@@ -27,11 +27,9 @@ const BottomSection: React.FC<BottomSectionProps> = ({ setActiveFilter, clearCom
 }, [isDarkMode]);
 
   useEffect(() => {
-      // Fetch dark mode status from localStorage on mount
       const darkModeEnabled = localStorage.getItem('isDarkMode') === 'true';
       setIsDarkMode(darkModeEnabled);
 
-      // Listen for localStorage changes
       const storageListener = () => {
           const darkModeEnabled = localStorage.getItem('isDarkMode') === 'true';
           setIsDarkMode(darkModeEnabled);

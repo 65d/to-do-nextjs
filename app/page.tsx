@@ -16,7 +16,6 @@ interface Task {
 }
 
 const TodoApp = () => {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
   
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskText, setNewTaskText] = useState('');
